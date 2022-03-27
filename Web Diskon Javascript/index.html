@@ -1,0 +1,45 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diskon Harga</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main>
+        <header>
+            <h1>Diskon Harga</h1>
+        </header>
+        <div class="inputs">
+            <p>Masukkan Harga Awal<p>
+            <input type="text" id="hargaawal" placeholder="Harga Barang">
+            <p>Masukkan Jumlah Diskon (%)<p>
+            <input type="text" id="diskon" placeholder="Jumlah Diskon">
+            <button onclick=cari()>Konversi</button>
+            <p>Harga Akhir<p>
+            <input type="text" id="hargaakhir" placeholder="Harga Akhir">
+            <p>Jumlah Diskon<p>
+            <input type="text" id="hargadiskon" placeholder="Harga Diskon">
+        </div>
+        <footer>
+            <p>By Zaskhia Artina Isnalifah</p>
+        </footer>
+    </main>
+    
+   <script>
+       function cari(){
+           var hargaAwal = document.getElementById('hargaawal').value;
+           var totalDiskon = document.getElementById('diskon').value;
+           
+           var hargaDiskon = totalDiskon*hargaAwal/100;
+           var hargaAkhir = hargaAwal - hargaDiskon;
+
+           document.getElementById('hargadiskon').value=hargaDiskon;
+           document.getElementById('hargaakhir').value=hargaAkhir;
+       }
+   </script>
+</body>
+</html>
