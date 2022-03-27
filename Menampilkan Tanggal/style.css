@@ -1,0 +1,61 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: beige;
+}
+
+h1{
+    position: absolute;
+    align-items: center;
+
+}
+
+.kalender{
+    margin-top: 30px;
+    width: 200px;
+    background: #fff;
+    text-align: center;
+    border-radius: 8px;
+    box-shadow: 0px 20px 25px solid #333;
+    overflow: hidden;
+}
+
+.kalender #bulan{
+    position: relative;
+    padding: 10px 20px;
+    background: #ff6331;
+    color: #fff;
+    font-size: 30px;
+    font-weight: 700;
+}
+
+.kalender #hari{
+    margin-top: 20px;
+    font-size: 20px;
+    font-weight: 300;
+    color: #999;
+}
+
+.kalender #tanggal{
+    margin: 5px ;
+    line-height: 1em;
+    font-size: 80px;
+    font-weight: 700;
+    color: #333;
+}
+
+.kalender #tahun{
+    margin-bottom: 20px;
+    font-size: 20px;
+    font-weight: 500;
+    color: #999;
+}
